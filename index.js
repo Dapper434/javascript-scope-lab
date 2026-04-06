@@ -1,21 +1,20 @@
-// Write your solution in this file!
 //  Global scope variables
-var burgers = ['Hamburger', 'Cheeseburger'];
-var featuredDrink = 'Strawberry Milkshake';
+const burgers = ['Hamburger', 'Cheeseburger'];  // const, not var
+let featuredDrink = 'Strawberry Milkshake';      // let, not var
 
 // Function-scoped variable
 function addBurger() {
-  var newBurger = 'Flatburger';        // function-scoped (var)
+  var newBurger = 'Flatburger';
   burgers.push(newBurger);
 }
 
-//  Block-scoped variable
+// Block-scoped variable
 if (true) {
-  let anotherNewBurger = 'Maple Bacon Burger';   // block-scoped (let)
+  let anotherNewBurger = 'Maple Bacon Burger';
   burgers.push(anotherNewBurger);
 }
 
-//  Change featured drink
+// Change featured drink
 function changeFeaturedDrink() {
   featuredDrink = 'The JavaShake';
 }
